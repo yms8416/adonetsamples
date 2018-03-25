@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BilgeAdam.Northwind.Business.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace BilgeAdam.Northwind.Client
         public frmProducts()
         {
             InitializeComponent();
+        }
+
+        private void frmProducts_Load(object sender, EventArgs e)
+        {
+            var repo = new ProductRepository();
+            dgvProducts.DataSource = repo.GetProducts();
         }
     }
 }

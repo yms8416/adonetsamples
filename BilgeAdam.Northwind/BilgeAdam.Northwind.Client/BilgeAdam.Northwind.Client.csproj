@@ -87,5 +87,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BilgeAdam.Northwind.Business\BilgeAdam.Northwind.Business.csproj">
+      <Project>{bc514ef4-b048-4265-963d-72e89aa2b539}</Project>
+      <Name>BilgeAdam.Northwind.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
