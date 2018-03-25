@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Northwind.Client"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Northwind.ConsoleTest", "BilgeAdam.Northwind.ConsoleTest\BilgeAdam.Northwind.ConsoleTest.csproj", "{B9A64A7B-6307-48F8-B558-B2EEF0807821}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Northwind.Business", "BilgeAdam.Northwind.Business\BilgeAdam.Northwind.Business.csproj", "{BC514EF4-B048-4265-963D-72E89AA2B539}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B9A64A7B-6307-48F8-B558-B2EEF0807821}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9A64A7B-6307-48F8-B558-B2EEF0807821}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9A64A7B-6307-48F8-B558-B2EEF0807821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC514EF4-B048-4265-963D-72E89AA2B539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC514EF4-B048-4265-963D-72E89AA2B539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC514EF4-B048-4265-963D-72E89AA2B539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC514EF4-B048-4265-963D-72E89AA2B539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

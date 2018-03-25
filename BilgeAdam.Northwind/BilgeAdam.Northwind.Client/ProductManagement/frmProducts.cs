@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace BilgeAdam.Northwind.Client
 {
-    public partial class frmMain : Form
+    public partial class frmProducts : Form
     {
-        public frmMain()
+        public frmProducts()
         {
             InitializeComponent();
-        }
-
-        private void msbProducts_Click(object sender, EventArgs e)
-        {
-            var f = new frmProducts();
-            f.MdiParent = this;
-            f.Show();
         }
     }
 }
