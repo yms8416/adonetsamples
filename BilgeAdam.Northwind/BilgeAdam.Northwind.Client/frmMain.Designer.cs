@@ -32,6 +32,8 @@
             this.uygulamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ürünYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msbProducts = new System.Windows.Forms.ToolStripMenuItem();
+            this.çalışanlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msbEmployees = new System.Windows.Forms.ToolStripMenuItem();
             this.msMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +41,8 @@
             // 
             this.msMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.uygulamaToolStripMenuItem,
-            this.ürünYönetimiToolStripMenuItem});
+            this.ürünYönetimiToolStripMenuItem,
+            this.çalışanlarToolStripMenuItem});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
             this.msMain.Size = new System.Drawing.Size(755, 24);
@@ -63,9 +66,24 @@
             // msbProducts
             // 
             this.msbProducts.Name = "msbProducts";
-            this.msbProducts.Size = new System.Drawing.Size(152, 22);
+            this.msbProducts.Size = new System.Drawing.Size(135, 22);
             this.msbProducts.Text = "Ürün Listesi";
             this.msbProducts.Click += new System.EventHandler(this.msbProducts_Click);
+            // 
+            // çalışanlarToolStripMenuItem
+            // 
+            this.çalışanlarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msbEmployees});
+            this.çalışanlarToolStripMenuItem.Name = "çalışanlarToolStripMenuItem";
+            this.çalışanlarToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
+            this.çalışanlarToolStripMenuItem.Text = "İnsan Kaynakları";
+            // 
+            // msbEmployees
+            // 
+            this.msbEmployees.Name = "msbEmployees";
+            this.msbEmployees.Size = new System.Drawing.Size(152, 22);
+            this.msbEmployees.Text = "Çalışanlar";
+            this.msbEmployees.Click += new System.EventHandler(this.msbEmployees_Click);
             // 
             // frmMain
             // 
@@ -91,6 +109,8 @@
         private System.Windows.Forms.ToolStripMenuItem uygulamaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ürünYönetimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem msbProducts;
+        private System.Windows.Forms.ToolStripMenuItem çalışanlarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem msbEmployees;
     }
 }
 

@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,6 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\DataConnection.cs" />
+    <Compile Include="Enums\Gender.cs" />
+    <Compile Include="Enums\MarrialStatus.cs" />
+    <Compile Include="Helpers\EmployeeBasicFilter.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BilgeAdam.Northwind.Client.HR;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,13 @@ namespace BilgeAdam.Northwind.Client
         private void msbProducts_Click(object sender, EventArgs e)
         {
             var f = new frmProducts();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void msbEmployees_Click(object sender, EventArgs e)
+        {
+            var f = new frmEmployees();
             f.MdiParent = this;
             f.Show();
         }
