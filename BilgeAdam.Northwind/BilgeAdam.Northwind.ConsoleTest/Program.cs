@@ -17,6 +17,7 @@ namespace BilgeAdam.Northwind.ConsoleTest
 
         static SqlConnection Connect()
         {
+            //RDBMS
             var connectionstring = "Server=10.11.33.118;Database=AdventureWorks2014;User Id=yms8416;Password=sifre";
             var connection = new SqlConnection(connectionstring);
             if (connection.State != ConnectionState.Open)//Bağlantı açık değilse bağlan
@@ -46,7 +47,7 @@ namespace BilgeAdam.Northwind.ConsoleTest
             var reader = command.ExecuteReader();
             while (reader.Read())
             {
-                Console.WriteLine("{0,8} {1,40} {2,15} {3,15}", reader["ProductNumber"], reader["Name"], reader["StandardCost"], reader["ListPrice"]);
+                Console.WriteLine("{0,14} {1,40} {2,15} {3,15}", reader["ProductNumber"], reader["Name"], reader["StandardCost"], reader["ListPrice"]);
             }
         }
     }

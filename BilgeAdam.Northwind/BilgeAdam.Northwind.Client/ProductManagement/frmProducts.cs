@@ -16,12 +16,27 @@ namespace BilgeAdam.Northwind.Client
         public frmProducts()
         {
             InitializeComponent();
+            Repository = new ProductRepository();
         }
-
+        public ProductRepository Repository { get; set; }
         private void frmProducts_Load(object sender, EventArgs e)
         {
-            var repo = new ProductRepository();
-            dgvProducts.DataSource = repo.GetProducts();
+            dgvProducts.DataSource = Repository.GetProducts();
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                txtSearch.Clear();
+                dgvProducts.DataSource = Repository.GetProducts();
+                e.SuppressKeyPress = true;
+            }
+            else if(e.KeyCode == Keys.Enter)
+            {
+                dgvProducts.DataSource = Repository.GetProductsByName(txtSearch.Text.Trim());
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }
