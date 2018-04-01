@@ -32,8 +32,10 @@
             this.uygulamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ürünYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msbProducts = new System.Windows.Forms.ToolStripMenuItem();
+            this.msbAddProduct = new System.Windows.Forms.ToolStripMenuItem();
             this.çalışanlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msbEmployees = new System.Windows.Forms.ToolStripMenuItem();
+            this.msbNewEmployee = new System.Windows.Forms.ToolStripMenuItem();
             this.msMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +60,8 @@
             // ürünYönetimiToolStripMenuItem
             // 
             this.ürünYönetimiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msbProducts});
+            this.msbProducts,
+            this.msbAddProduct});
             this.ürünYönetimiToolStripMenuItem.Name = "ürünYönetimiToolStripMenuItem";
             this.ürünYönetimiToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.ürünYönetimiToolStripMenuItem.Text = "Ürün Yönetimi";
@@ -70,10 +73,18 @@
             this.msbProducts.Text = "Ürün Listesi";
             this.msbProducts.Click += new System.EventHandler(this.msbProducts_Click);
             // 
+            // msbAddProduct
+            // 
+            this.msbAddProduct.Name = "msbAddProduct";
+            this.msbAddProduct.Size = new System.Drawing.Size(135, 22);
+            this.msbAddProduct.Text = "Ürün Ekle";
+            this.msbAddProduct.Click += new System.EventHandler(this.msbAddProduct_Click);
+            // 
             // çalışanlarToolStripMenuItem
             // 
             this.çalışanlarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msbEmployees});
+            this.msbEmployees,
+            this.msbNewEmployee});
             this.çalışanlarToolStripMenuItem.Name = "çalışanlarToolStripMenuItem";
             this.çalışanlarToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
             this.çalışanlarToolStripMenuItem.Text = "İnsan Kaynakları";
@@ -84,6 +95,13 @@
             this.msbEmployees.Size = new System.Drawing.Size(152, 22);
             this.msbEmployees.Text = "Çalışanlar";
             this.msbEmployees.Click += new System.EventHandler(this.msbEmployees_Click);
+            // 
+            // msbNewEmployee
+            // 
+            this.msbNewEmployee.Name = "msbNewEmployee";
+            this.msbNewEmployee.Size = new System.Drawing.Size(152, 22);
+            this.msbNewEmployee.Text = "Yeni Çalışan";
+            this.msbNewEmployee.Click += new System.EventHandler(this.msbNewEmployee_Click);
             // 
             // frmMain
             // 
@@ -111,6 +129,8 @@
         private System.Windows.Forms.ToolStripMenuItem msbProducts;
         private System.Windows.Forms.ToolStripMenuItem çalışanlarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem msbEmployees;
+        private System.Windows.Forms.ToolStripMenuItem msbAddProduct;
+        private System.Windows.Forms.ToolStripMenuItem msbNewEmployee;
     }
 }
 

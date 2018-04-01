@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BilgeAdam.Northwind.Business.Dtos;
 
 namespace BilgeAdam.Northwind.Business.Repositories
 {
@@ -52,6 +53,11 @@ namespace BilgeAdam.Northwind.Business.Repositories
             }
             reader.Close();
             return list;
+        }
+
+        public void SaveEmployee(EmployeeDto employee)
+        {
+            
         }
 
         public IEnumerable<Employee> GetAllEmployeesByFilter(EmployeeBasicFilter filter)

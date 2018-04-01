@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\DataConnection.cs" />
+    <Compile Include="Dtos\EmployeeDto.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\MarrialStatus.cs" />
     <Compile Include="Helpers\EmployeeBasicFilter.cs" />

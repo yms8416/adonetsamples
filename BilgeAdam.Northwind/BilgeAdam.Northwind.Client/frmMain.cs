@@ -1,4 +1,5 @@
 ﻿using BilgeAdam.Northwind.Client.HR;
+using BilgeAdam.Northwind.Client.ProductManagement;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,16 +21,30 @@ namespace BilgeAdam.Northwind.Client
 
         private void msbProducts_Click(object sender, EventArgs e)
         {
-            var f = new frmProducts();
-            f.MdiParent = this;
-            f.Show();
+            OpenForm<frmProducts>();
         }
 
         private void msbEmployees_Click(object sender, EventArgs e)
         {
-            var f = new frmEmployees();
+            OpenForm<frmEmployees>();
+        }
+
+        private void msbAddProduct_Click(object sender, EventArgs e)
+        {
+            OpenForm<frmNewProduct>();
+        }
+
+        public void OpenForm<T>() where T : Form
+        {
+            var type = typeof(T);
+            var f = Activator.CreateInstance(type) as T;
             f.MdiParent = this;
             f.Show();
+        }
+
+        private void msbNewEmployee_Click(object sender, EventArgs e)
+        {
+            OpenForm<frmNewEmployee>();
         }
     }
 }

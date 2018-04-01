@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\EnumComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +59,18 @@
     </Compile>
     <Compile Include="HR\frmEmployees.Designer.cs">
       <DependentUpon>frmEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\frmNewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\frmNewEmployee.Designer.cs">
+      <DependentUpon>frmNewEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductManagement\frmNewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductManagement\frmNewProduct.Designer.cs">
+      <DependentUpon>frmNewProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductManagement\frmProducts.cs">
       <SubType>Form</SubType>
@@ -70,6 +85,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HR\frmEmployees.resx">
       <DependentUpon>frmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\frmNewEmployee.resx">
+      <DependentUpon>frmNewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductManagement\frmNewProduct.resx">
+      <DependentUpon>frmNewProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductManagement\frmProducts.resx">
       <DependentUpon>frmProducts.cs</DependentUpon>
