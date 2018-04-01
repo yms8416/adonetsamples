@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSurname = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,11 +43,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.rdbFemale = new System.Windows.Forms.RadioButton();
             this.rdbMale = new System.Windows.Forms.RadioButton();
+            this.ctxGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ctxDelete = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.ctxGrid.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvEmployees
@@ -61,9 +65,12 @@
             this.colBirthDate,
             this.colStatus,
             this.colGender});
+            this.dgvEmployees.ContextMenuStrip = this.ctxGrid;
             this.dgvEmployees.Location = new System.Drawing.Point(12, 12);
+            this.dgvEmployees.MultiSelect = false;
             this.dgvEmployees.Name = "dgvEmployees";
             this.dgvEmployees.ReadOnly = true;
+            this.dgvEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmployees.Size = new System.Drawing.Size(753, 245);
             this.dgvEmployees.TabIndex = 0;
             this.dgvEmployees.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvEmployees_RowPostPaint);
@@ -186,6 +193,20 @@
             this.rdbMale.Text = "Erkek";
             this.rdbMale.UseVisualStyleBackColor = true;
             // 
+            // ctxGrid
+            // 
+            this.ctxGrid.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ctxDelete});
+            this.ctxGrid.Name = "ctxGrid";
+            this.ctxGrid.Size = new System.Drawing.Size(87, 26);
+            // 
+            // ctxDelete
+            // 
+            this.ctxDelete.Name = "ctxDelete";
+            this.ctxDelete.Size = new System.Drawing.Size(152, 22);
+            this.ctxDelete.Text = "Sil";
+            this.ctxDelete.Click += new System.EventHandler(this.ctxDelete_Click);
+            // 
             // frmEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +227,7 @@
             this.groupBox2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.ctxGrid.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -226,5 +248,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colBirthDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGender;
+        private System.Windows.Forms.ContextMenuStrip ctxGrid;
+        private System.Windows.Forms.ToolStripMenuItem ctxDelete;
     }
 }

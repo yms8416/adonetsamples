@@ -9,7 +9,8 @@ namespace BilgeAdam.Northwind.Business.Dtos
 {
     public class EmployeeDto
     {
-        public string FirstName { get; set; } 
+        public string NationalNumber { get; set; } 
+        public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public DateTime HireDate { get; set; }
@@ -18,5 +19,6 @@ namespace BilgeAdam.Northwind.Business.Dtos
         public string LoginName { get; set; }
         public int VacationHours { get; set; }
         public int SickLeaveHours { get; set; }
+        public string Title { get; set; }
     }
 }

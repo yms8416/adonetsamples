@@ -49,10 +49,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dtpHireDate = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.txtLoginName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtLoginName = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHealthHours)).BeginInit();
@@ -88,7 +88,7 @@
             this.txtNatId.Location = new System.Drawing.Point(100, 26);
             this.txtNatId.Name = "txtNatId";
             this.txtNatId.Size = new System.Drawing.Size(208, 22);
-            this.txtNatId.TabIndex = 5;
+            this.txtNatId.TabIndex = 0;
             // 
             // label1
             // 
@@ -152,7 +152,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(325, 197);
-            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişisel Bilgiler";
             // 
@@ -165,7 +165,7 @@
             this.ecbMStatus.Name = "ecbMStatus";
             this.ecbMStatus.SelectedEnumValue = 0;
             this.ecbMStatus.Size = new System.Drawing.Size(208, 21);
-            this.ecbMStatus.TabIndex = 12;
+            this.ecbMStatus.TabIndex = 4;
             // 
             // ecbGender
             // 
@@ -176,7 +176,7 @@
             this.ecbGender.Name = "ecbGender";
             this.ecbGender.SelectedEnumValue = 0;
             this.ecbGender.Size = new System.Drawing.Size(208, 21);
-            this.ecbGender.TabIndex = 9;
+            this.ecbGender.TabIndex = 3;
             // 
             // dtpBirthDate
             // 
@@ -187,7 +187,7 @@
             this.dtpBirthDate.MinDate = new System.DateTime(1953, 1, 1, 0, 0, 0, 0);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(208, 22);
-            this.dtpBirthDate.TabIndex = 11;
+            this.dtpBirthDate.TabIndex = 5;
             // 
             // label8
             // 
@@ -213,7 +213,7 @@
             this.groupBox2.Location = new System.Drawing.Point(343, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(342, 197);
-            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "İş Bilgileri";
             // 
@@ -227,7 +227,7 @@
             0});
             this.nudHealthHours.Name = "nudHealthHours";
             this.nudHealthHours.Size = new System.Drawing.Size(208, 22);
-            this.nudHealthHours.TabIndex = 11;
+            this.nudHealthHours.TabIndex = 4;
             // 
             // label10
             // 
@@ -248,7 +248,7 @@
             0});
             this.nudVacHours.Name = "nudVacHours";
             this.nudVacHours.Size = new System.Drawing.Size(208, 22);
-            this.nudVacHours.TabIndex = 11;
+            this.nudVacHours.TabIndex = 3;
             // 
             // label9
             // 
@@ -268,7 +268,7 @@
             this.dtpHireDate.MinDate = new System.DateTime(1953, 1, 1, 0, 0, 0, 0);
             this.dtpHireDate.Name = "dtpHireDate";
             this.dtpHireDate.Size = new System.Drawing.Size(208, 22);
-            this.dtpHireDate.TabIndex = 9;
+            this.dtpHireDate.TabIndex = 2;
             // 
             // label7
             // 
@@ -279,6 +279,15 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "İşe Giriş Tarihi";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(11, 54);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 13);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Kullanıcı Adı";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -288,28 +297,19 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Ünvanı";
             // 
-            // txtTitle
-            // 
-            this.txtTitle.Location = new System.Drawing.Point(123, 23);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(208, 22);
-            this.txtTitle.TabIndex = 7;
-            // 
             // txtLoginName
             // 
             this.txtLoginName.Location = new System.Drawing.Point(123, 51);
             this.txtLoginName.Name = "txtLoginName";
             this.txtLoginName.Size = new System.Drawing.Size(208, 22);
-            this.txtLoginName.TabIndex = 7;
+            this.txtLoginName.TabIndex = 1;
             // 
-            // label11
+            // txtTitle
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(11, 54);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 13);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Kullanıcı Adı";
+            this.txtTitle.Location = new System.Drawing.Point(123, 23);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(208, 22);
+            this.txtTitle.TabIndex = 0;
             // 
             // frmNewEmployee
             // 

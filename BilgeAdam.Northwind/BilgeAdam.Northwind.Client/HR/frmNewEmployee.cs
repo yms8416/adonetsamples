@@ -18,6 +18,7 @@ namespace BilgeAdam.Northwind.Client.HR
         public frmNewEmployee()
         {
             InitializeComponent();
+            Repository = new EmployeeRepository();
             ecbGender.EnumType = typeof(Gender);
             ecbMStatus.EnumType = typeof(MarrialStatus);
         }
@@ -33,6 +34,7 @@ namespace BilgeAdam.Northwind.Client.HR
         {
             var employee = new EmployeeDto
             {
+                NationalNumber = txtNatId.Text,
                 FirstName = txtFirstName.Text,
                 LastName = txtLastName.Text,
                 BirthDate = dtpBirthDate.Value,
@@ -41,9 +43,14 @@ namespace BilgeAdam.Northwind.Client.HR
                 MarrialStatus = (MarrialStatus)ecbGender.SelectedEnumValue,
                 LoginName = txtLoginName.Text,
                 SickLeaveHours = (int)nudHealthHours.Value,
-                VacationHours = (int)nudVacHours.Value
+                VacationHours = (int)nudVacHours.Value,
+                Title = txtTitle.Text
             };
-            Repository.SaveEmployee(employee)
+            var result = Repository.SaveEmployee(employee);
+            if (result)
+            {
+                MessageBox.Show("Kayıt işlemi tamamlandı", "Yeni Personel", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

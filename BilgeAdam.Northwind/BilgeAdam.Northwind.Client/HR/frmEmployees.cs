@@ -53,5 +53,26 @@ namespace BilgeAdam.Northwind.Client.HR
             };
             dgvEmployees.DataSource = Repository.GetAllEmployeesByFilter(filter);
         }
+
+        private void ctxDelete_Click(object sender, EventArgs e)
+        {
+            var selected = dgvEmployees.SelectedRows[0].DataBoundItem as Employee;
+            if (selected == null)
+            {
+                MessageBox.Show("Personel seçilemediğinden işlem gerçekleştirilemiyor");
+                return;
+            }
+            var mresult = MessageBox.Show($"{selected.FirstName} {selected.LastName} adına kayıtlı bilgileri silmek istiyor musunuz?", "Kayıt Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (mresult == DialogResult.Yes)
+            {
+                var result = Repository.DeleteEmployee(selected.Id);
+                if (result)
+                {
+                    MessageBox.Show("Silme işlemi tamamlandı", "Kayıt Sil", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    dgvEmployees.DataSource = Repository.GetAllEmployees();
+                }
+            }
+            
+        }
     }
 }

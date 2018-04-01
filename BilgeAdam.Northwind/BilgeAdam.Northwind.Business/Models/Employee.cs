@@ -6,6 +6,7 @@ namespace BilgeAdam.Northwind.Business.Models
 {
     public class Employee
     {
+        public int Id { get; set; }
         [DisplayName("Adı")]
         public string FirstName { get; set; }
         [DisplayName("Soyadı")]
